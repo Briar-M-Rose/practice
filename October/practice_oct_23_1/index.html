@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlists Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- This page will be used to structure our project. -->
+    <main class="league-spartan-regular main-section">
+      <!-- Header Text -->
+      <header>
+        <h1 class="header-bubble">Playlist Generator</h1>
+        <!-- Backdrop -->
+      </header>
+      <!-- Main Interactive Section. -->
+      <section class="main-interactive">
+        <!-- Playlist Description -->
+        <section class="playlist-description">
+          <!-- We may add modals for these that will tell a user more information. -->
+          <h2 id="playlist-name"  class="playlist-header">Playlist</h2>
+          <h3 id="created-in"  class="playlist-subheader">Created In</h3>
+          <h4 id="vibe"  class="playlist-subheader">Vibes</h4>
+        </section>
+        <!-- Interactive Buttons. These should have modals that confirm the action, as well tell you more about the action. -->
+        <section class="button-section">
+          <!-- Section for main buttons -->
+          <section>
+            <!-- 'Go To' Button Below -->
+            <button id='go-to-button' class="large-button"><a id="go-to" class="link" href="">GO TO</a></button>
+          </section>
+          <!-- Section for other buttons -->
+          <section>
+            <!-- 'Discard Button Below' -->
+            <button class="large-button-ready">BOOs</button>
+          </section>
+        </section>
+        <!-- Backdrop for Entire Section -->
+      </section>
+      <!-- CTA Button -->
+      <section>
+        <!-- CTA Button Below -->
+        <button onclick="displayPlaylist()"  class="cta">GENERATE</button>
+        <!-- Button Backdrop-->
+      </section>
+      <!-- Main Backdrop -->
+      <!-- Credit Footer -->
+      <footer class="footer">By Briar Rose</footer>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+/* Plain Styles */
+body {
+  margin: 0;
+}
+
+/* Font Styles */
+.league-spartan-regular {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Main Section Styles */
+.main-section {
+  background-image: linear-gradient(to bottom, #007A68, #1d1e2c);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Header Styles */
+.header-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 64px;
+  padding: 7px;
+  background-color: #1d1e2c;
+  color: white;
+  box-shadow: 4px 4px 0px rgb(2, 161, 134, 1);
+  font-size: 28px;
+  font-weight: 300;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+/* Interactice Section Styles */
+.main-interactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 325px;
+  background-image: linear-gradient(to bottom, #02a186, #016554);
+  padding: 7px;
+  border-radius: 25px;
+  box-shadow: 4px 6px 0px rgb(29, 30, 44, 1);
+}
+
+/* Playlist Section Styles */
+.playlist-description {
+  padding: 10px 20px;
+  width: 300px;
+  background-color: #1d1e2c;
+  border-radius: 25px;
+  color: #e7fffb;
+  font-size: 20px;
+}
+
+.playlist-header {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+
+.playlist-subheader {
+  font-weight: 350;
+  font-size: 18px;
+}
+
+/* Button Section Styles */
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.large-button {
+    border: none;
+    border-radius: 50px;
+    width: 125px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #1d1e2c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-button-ready {
+    border: none;
+    border-radius: 50px;
+    width: 125px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #1d1e2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 0px rgb(29, 30, 44, 1);
+    transition: all 1s;
+}
+
+.large-button-ready:hover{
+    width: 150px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-ready{
+    text-decoration: none;
+    color: #1d1e2c;
+}
+
+/* CTA Styles */
+.cta{
+    border: none;
+    border-radius: 25px;
+    background-color: #1d1e2c;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 0px rgb(2, 161, 134, 1);
+}
+.cta:hover{
+    background-color: rgb(2, 161, 134, 1);
+    box-shadow: 4px 4px 0px rgb(255, 255, 255, 1);
+    color: #1d1e2c;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+/* Footer Styles */
+.footer{
+    color: #1d1e2c;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
