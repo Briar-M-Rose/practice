@@ -22,6 +22,10 @@ body {
   height: 100vh;
 }
 
+.main-items{
+  display: flex;
+}
+
 /* Header Styles */
 .header-bubble {
   display: flex;
@@ -36,7 +40,7 @@ body {
   font-size: 28px;
   font-weight: 300;
   border-radius: 25px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* Interactice Section Styles */
@@ -50,7 +54,7 @@ body {
   background-image: linear-gradient(to bottom, #02a186, #016554);
   padding: 7px;
   border-radius: 25px;
-  box-shadow: 4px 6px 0px rgb(29, 30, 44, 1);
+  box-shadow: 6px 8px 0px rgb(29, 30, 44, 1);
 }
 
 /* Playlist Section Styles */
@@ -72,6 +76,26 @@ body {
 .playlist-subheader {
   font-weight: 350;
   font-size: 18px;
+}
+
+/* Inquiry Styles */
+.inquiry{
+  float: right;
+}
+
+.inquiry-button{
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #1d1e2c;
+  font-size: 20px;
+}
+
+.inquiry-button:hover{
+  color: #1d1e2c;
+  background-color: white;
+  border-radius: 0px;
+  transition: all 1s;
 }
 
 /* Button Section Styles */
@@ -99,6 +123,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: auto;
 }
 
 .large-button-ready {
@@ -124,11 +149,13 @@ body {
     width: 150px;
     transition: all 1s;
     cursor: pointer;
+    border-radius: 0px;
 }
 
 .link{
     text-decoration: none;
     color: #fff;
+    cursor: auto;
 }
 
 .link-ready{
@@ -136,33 +163,57 @@ body {
     color: #1d1e2c;
 }
 
-/* CTA Styles */
-.cta{
-    border: none;
-    border-radius: 25px;
-    background-color: #1d1e2c;
-    color: white;
-    padding: 25px;
-    font-size: 25px;
-    margin-top: 20px;
-    box-shadow: 4px 4px 0px rgb(2, 161, 134, 1);
+/* Inquiry Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.cta:hover{
-    background-color: rgb(2, 161, 134, 1);
-    box-shadow: 4px 4px 0px rgb(255, 255, 255, 1);
-    color: #1d1e2c;
-    transition: all 1s;
-    cursor: pointer;
+@keyframes animatetop {
+  from {top: -300px; opacity: 0; scale: 0}
+  to {top: 0; opacity: 1; scale: 1;}
 }
-
-
-/* Footer Styles */
-.footer{
-    color: #1d1e2c;
-    background-color: #fff;
-    padding: 10px 30px;
-    border-radius: 50px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-weight: 500;
+.modal-content {
+  background-color: #02a186;
+  color: #1d1e2c;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 30px;
+  border-radius: 0px;
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: 40%;
+  box-shadow: 4px 4px 0px rgb(255, 255, 255, 1);
+  animation-name: animatetop;
+  animation-duration: 1s;
+  transition: all 1s;
+}
+.close {
+  color: #1d1e2c;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 40px;
+  transition: all 1s;
+}
+.inquiry-title{
+  font-size: 30px;
+  padding: 0px 20px;
+}
+.inquiry-text{
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0px 20px;
 }
