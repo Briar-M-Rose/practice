@@ -19,41 +19,56 @@
       <!-- Header Text -->
       <header>
         <h1 class="header-bubble">Playlist Generator</h1>
-        <!-- Backdrop -->
       </header>
       <!-- Main Interactive Section. -->
-      <section class="main-interactive">
-        <!-- Playlist Description -->
-        <section class="playlist-description">
-          <!-- We may add modals for these that will tell a user more information. -->
-          <h2 id="playlist-name"  class="playlist-header">Playlist</h2>
-          <h3 id="created-in"  class="playlist-subheader">Created In</h3>
-          <h4 id="vibe"  class="playlist-subheader">Vibes</h4>
-        </section>
-        <!-- Interactive Buttons. These should have modals that confirm the action, as well tell you more about the action. -->
-        <section class="button-section">
-          <!-- Section for main buttons -->
-          <section>
-            <!-- 'Go To' Button Below -->
-            <button id='go-to-button' class="large-button"><a id="go-to" class="link" href="">GO TO</a></button>
+      <section class="main-items">
+        <section class="main-interactive">
+          <!-- Playlist Description -->
+          <section class="playlist-description">
+            <!-- We may add modals for these that will tell a user more information. -->
+            <h2 id="playlist-name" class="playlist-header">Playlist</h2>
+            <h3 id="created-in" class="playlist-subheader">Created In</h3>
+            <h4 id="vibe" class="playlist-subheader">Vibes</h4>
+            <!-- Inquiry Button -->
+            <section class="inquiry">
+              <button id="modalButton" class="inquiry-button">?</button>
+            </section>
           </section>
-          <!-- Section for other buttons -->
-          <section>
-            <!-- 'Discard Button Below' -->
-            <button class="large-button-ready">BOOs</button>
+          <!-- Interactive Buttons. These should have modals that confirm the action, as well tell you more about the action. -->
+          <section class="button-section">
+            <!-- Section for shuffle button -->
+            <section>
+              <!-- 'Discard Button Below' -->
+              <button onclick="displayPlaylist()" class="large-button-ready">
+                SHUFFLE
+              </button>
+            </section>
+            <!-- Section for go to button -->
+            <section>
+              <!-- 'Go To' Button Below -->
+              <button id="go-to-button" class="large-button">
+                <a id="go-to" class="link" href="">GO TO</a>
+              </button>
+            </section>
           </section>
+          <!-- Backdrop for Entire Section -->
         </section>
-        <!-- Backdrop for Entire Section -->
       </section>
-      <!-- CTA Button -->
-      <section>
-        <!-- CTA Button Below -->
-        <button onclick="displayPlaylist()"  class="cta">GENERATE</button>
-        <!-- Button Backdrop-->
+      <!-- Inquiry Modal -->
+      <section id="myModal" class="modal">
+        <!-- Modal Content -->
+        <section id="modalContent" class="modal-content">
+          <span id="closeButton" class="close">&times;</span>
+          <h2 class="inquiry-title">Welcome to my Playlist Project!</h2>
+          <p class="inquiry-text">
+            This website was made in roughly two days, and is being used to
+            display some of the skills I've been practicing as of late. The
+            'Shuffle' button will generate a playlist from 29 of my playlist
+            titled 'Boos'. The Go To button will take you to the actual
+            playlist!
+          </p>
+        </section>
       </section>
-      <!-- Main Backdrop -->
-      <!-- Credit Footer -->
-      <footer class="footer">By Briar Rose</footer>
     </main>
     <!-- JavaScript -->
     <script src="script.js"></script>
