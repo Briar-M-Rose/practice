@@ -256,3 +256,23 @@ function displayPlaylist() {
   changeButton()
 }
 
+// Modal Parts
+const openButton = document.getElementById("modalButton")
+const modal = document.getElementById("myModal")
+const closeButton = document.getElementById("closeButton")
+
+// Function for Modal
+openButton.onclick = function() {
+  modal.style.display = "block";
+
+}
+
+closeButton.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal){
+  modal.style.display = "none";
+}
+}
